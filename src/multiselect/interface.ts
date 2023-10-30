@@ -17,6 +17,7 @@ export interface IMultiselectProps {
     onRemove?: (selectedList:any, selectedItem: any) => void,
     onSearch?: (value:string) => void,
     onKeyPressFn?: (event:any, value:string) => void,
+    groupSelectAll?: (selectedList:any, selectedItem: any) => void,
     closeIcon?: string,
     singleSelect?: boolean,
     caseSensitiveSearch?: boolean,
