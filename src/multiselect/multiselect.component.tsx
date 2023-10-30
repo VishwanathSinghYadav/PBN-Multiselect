@@ -317,6 +317,18 @@ export class Multiselect extends React.Component<IMultiselectProps, any> {
     }
   }
 
+onSelectAllGroupItem(obj) {
+    const {groupBy, groupSelectAll} = this.props;
+    const {groupedObject, selectedValues} = this.state;
+    if (groupBy) {
+      groupedObject[obj].map((option, i) => {
+        this.onSelectItem(option);
+      });
+      groupSelectAll(selectedValues, obj)
+      
+    } 
+  }
+
   onSelectItem(item) {
     const { selectedValues } = this.state;
     const { selectionLimit, onSelect, singleSelect, showCheckbox } = this.props;
