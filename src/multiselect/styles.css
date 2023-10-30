@@ -112,7 +112,6 @@
 }
 li.groupHeading {
   color: #908e8e;
-  pointer-events: none;
   padding: 5px 15px;
 }
 li.groupChildEle {
